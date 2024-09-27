@@ -1,8 +1,93 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url("vars.css");
+@import url("cta.css");
+
+html,body {
+  margin:0;
+  padding:0;
 }
 
-a {
-  color: #00B7FF;
+
+header#top{
+  nav{
+
+    background-color: var(--primary-color);
+    display:flex;
+    justify-content: space-between;
+
+    ul{
+      display: flex;
+      list-style-type: none;
+      justify-content: center;
+      padding:0;
+      margin:0;
+
+      a{
+        display:block;
+        text-decoration: none;
+        font-family: "Lilita One", sans-serif;
+        padding:0.6rem 2rem;
+        font-size: 2rem;
+        color:var(--font-color-header);
+      }      
+
+      li{
+        margin:0;
+        transition: all 0.5s;
+        position:relative;
+
+
+
+        &:hover{          
+          background-color: var(--font-color-header);
+          a{
+            color: var(--primary-color);
+          }
+        }
+
+        &:hover ul.submenu{
+          display: flex;
+        }
+
+        ul.submenu{
+          display: none;
+          flex-direction: column;
+          position:absolute;
+          /*left:0;
+          right:0;*/
+          z-index:9;
+          background-color: var(--primary-color);
+
+          a{           
+            color:var(--font-color-header);
+          }
+
+          li:hover a{
+            color: var(--primary-color)
+          }
+
+        }
+
+      }
+
+    }
+
+    ul.mobile-open-menu{
+      display: none;
+    }
+
+  }
+}
+
+
+@media screen and (max-width:800px) {
+  header#top nav ul.mobile-open-menu{
+    display: flex;
+  }
+
+  header#top nav ul:not(.mobile-open-menu){
+    display:none;
+  }
+
+
 }

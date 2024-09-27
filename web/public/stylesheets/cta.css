@@ -1,0 +1,62 @@
+section#cta{
+
+    outline:solid 1px red;
+    min-height:50vh;
+    background-image: url(../images/fondo-cta.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position:relative;
+  
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  
+    color: var(--font-color-cta);
+    font-family: "Lilita One", sans-serif;
+  
+    div.backdrop{
+      position:absolute;
+      top:0;
+      left:0;
+      right:0;
+      bottom:0;
+      background-color: rgba(48, 121, 46, 0.527);
+      backdrop-filter: blur(3px);
+    }
+  
+    div.inner{
+      z-index:1;
+      /*max-width:900px;*/
+    }
+  
+    h1{
+      font-size: clamp( 2rem, var(--font-size-h1-cta), 6rem);
+      font-weight: lighter;
+    }
+  
+    p{
+      font-size:calc( clamp( 2rem, var(--font-size-h1-cta), 6rem) / 2);
+    }
+  
+    a{
+      font-size:2rem;
+      border:solid 2px var(--font-color-cta);
+      padding:1rem 2rem;
+      background-color: var(--primary-color);
+      border-radius: 4px;
+      box-shadow: 0 0  3px var(--primary-color);
+      color:var(--font-color-cta);
+      text-decoration: none;
+      transition: all 1s;
+  
+      &:hover{ 
+        background-color: var(--font-color-cta);
+        color: var(--primary-color);
+      }
+    }
+  
+  }
+  

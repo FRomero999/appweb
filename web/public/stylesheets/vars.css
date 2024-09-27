@@ -1,0 +1,9 @@
+:root{
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    --font-color-cta : #f8f8f8;  
+    --font-size-h1-cta : 8vw;
+
+    --primary-color:rgb(11, 11, 134);
+
+    --font-color-header : #f8f8f8;
+  }
