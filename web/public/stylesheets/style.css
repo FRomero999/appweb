@@ -1,93 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
 @import url("vars.css");
 @import url("cta.css");
+@import url("offcanvas.css");
+@import url("header.css");
+@import url("footer.css");
 
 html,body {
   margin:0;
   padding:0;
 }
 
+main section{
+  max-width: var(--site-width);
+  margin:auto;
+}
 
-header#top{
-  nav{
+section.col2{
 
-    background-color: var(--primary-color);
+  display:flex;
+  flex-direction: column;
+  gap:2rem;
+
+  h2{
+    text-align: center;
+    font-family: var(--font-family-header);
+  }
+
+  div.inner{
     display:flex;
-    justify-content: space-between;
+    gap:2rem;
 
-    ul{
-      display: flex;
-      list-style-type: none;
-      justify-content: center;
-      padding:0;
-      margin:0;
-
-      a{
-        display:block;
-        text-decoration: none;
-        font-family: "Lilita One", sans-serif;
-        padding:0.6rem 2rem;
-        font-size: 2rem;
-        color:var(--font-color-header);
-      }      
-
-      li{
-        margin:0;
-        transition: all 0.5s;
-        position:relative;
-
-
-
-        &:hover{          
-          background-color: var(--font-color-header);
-          a{
-            color: var(--primary-color);
-          }
-        }
-
-        &:hover ul.submenu{
-          display: flex;
-        }
-
-        ul.submenu{
-          display: none;
-          flex-direction: column;
-          position:absolute;
-          /*left:0;
-          right:0;*/
-          z-index:9;
-          background-color: var(--primary-color);
-
-          a{           
-            color:var(--font-color-header);
-          }
-
-          li:hover a{
-            color: var(--primary-color)
-          }
-
-        }
-
-      }
-
+    *{
+      flex:1;
     }
-
-    ul.mobile-open-menu{
-      display: none;
-    }
-
   }
+
 }
 
 
-@media screen and (max-width:800px) {
-  header#top nav ul.mobile-open-menu{
-    display: flex;
-  }
-
-  header#top nav ul:not(.mobile-open-menu){
-    display:none;
-  }
 
 
-}
+

@@ -4,6 +4,9 @@
     --font-size-h1-cta : 8vw;
 
     --primary-color:rgb(11, 11, 134);
+    --primary-color-alpha:rgb(112, 112, 211);
 
     --font-color-header : #f8f8f8;
+    --font-family-header : "Lilita One", sans-serif;
+    --site-width: 900px;
   }
