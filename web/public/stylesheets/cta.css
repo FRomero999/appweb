@@ -41,22 +41,5 @@ section#cta{
       font-size:calc( clamp( 2rem, var(--font-size-h1-cta), 6rem) / 2);
     }
   
-    a{
-      font-size:2rem;
-      border:solid 2px var(--font-color-cta);
-      padding:1rem 2rem;
-      background-color: var(--primary-color);
-      border-radius: 4px;
-      box-shadow: 0 0  3px var(--primary-color);
-      color:var(--font-color-cta);
-      text-decoration: none;
-      transition: all 1s;
-  
-      &:hover{ 
-        background-color: var(--font-color-cta);
-        color: var(--primary-color);
-      }
-    }
-  
   }
   
