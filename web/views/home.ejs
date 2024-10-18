@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="robots" content="index, nofollow">
+    <meta name="author" content="">
+
+    <title>Restaurante</title>
+    <link rel="shortcut icon" href="images/cuchilleria.png" type="image/x-icon">
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body>
+
+    <aside id="offcanvas">
+
+        <h2>Reserva mesa</h2>
+        <form action="">
+            <div class="control">
+                <label for="email">Email</label>
+                <input type="email" placeholder="pon tu correo" id="email" name="email">
+            </div>
+            <div class="control">
+                <label for="fecha">Fecha</label>
+                <input type="datetime-local" id="fecha" name="fecha">
+            </div>
+            <div class="control">
+                <label for="personas">Personas</label>
+                <input type="number" min="1" max="5" value="1" id="personas" name="personas">
+            </div>
+            <input id="lenguaje" type="hidden" name="lenguaje">
+
+            <div class="control">
+                <button>Enviar</button>
+            </div>
+        </form>
+
+        <button class="close">&times;</button>
+    </aside>
+    
+    <header id="top">
+        <nav class="menu">
+            <img src="https://picsum.photos/150/40" alt="">
+            <ul>
+                <li><a href="home.html">Inicio</a></li>
+                <li>
+                    <a href="#">Menus & carta</a>
+                    <ul class="submenu">
+                        <li><a href="#">Carta</a></li>
+                        <li><a href="#">Menús del día</a></li>
+                        <li><a href="celebraciones.html">Celebraciones</a></li>
+                    </ul>
+                </li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <ul>
+                <li><a id="open-offcanvas" href="#">Reservar</a></li>
+            </ul>
+            <ul class="mobile-open-menu">
+                <li><a id="open-menu" href="#">Menu</a>
+                    <ul class="submenu">
+                        <li><a href="#">Carta</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>                
+                </li>
+            </ul>
+        </nav>
+    </header>
+     
+    <section id="cta">
+        <div class="backdrop"></div>
+        <div class="inner">
+            <h1><%=titulo %></h1>
+            <p>Reserva tu mesa en Viva María y disfruta de la auténtica gastronomía italiana en Málaga.</p>
+            <a class="button" href="#">Haz tu reserva</a>
+            
+        </div>
+    </section>
+
+
+    <main>
+
+        <section id="presentacion" class="cols boxed">
+            <h2>Descubre la esencia de Viva María</h2>
+            <div class="inner">
+                <div>
+                    <img src="https://picsum.photos/200" alt="Plato tradicional italiano">
+                    Nuestra pasión por la cocina italiana se refleja en cada plato. Utilizamos ingredientes frescos y locales, combinados con recetas tradicionales para ofrecerte una experiencia culinaria auténtica y deliciosa. ¡Déjate sorprender por nuestros sabores!
+                </div>
+                <div>
+                    <img src="https://picsum.photos/200" alt="Interior del restaurante">
+                    El ambiente de Viva María es cálido y acogedor, perfecto para disfrutar de una comida en familia o una cena romántica. Nuestro personal te recibirá con una sonrisa y se asegurará de que tu visita sea inolvidable.
+                </div>
+                <div>
+                    <img src="https://picsum.photos/200" alt="Chef preparando comida">
+                    Nuestros chefs son expertos en la cocina italiana y ponen todo su esmero en cada creación. Desde las pastas frescas hasta los postres caseros, cada plato es una obra de arte gastronómica.
+                </div>
+                <div>
+                    <img src="https://picsum.photos/200" alt="Vino y comida">
+                    No solo la comida es importante. En Viva María ofrecemos una selección cuidada de vinos italianos y españoles que complementan perfectamente nuestra carta, para que cada bocado sea acompañado de la bebida ideal.
+                    <div class="slide-container">
+                        <div class="inner">
+                            <div>
+                                <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, facere!</h3>
+                            </div>
+                            <div>
+                                <h3>At earum veniam esse repellendus ducimus qui, quos similique facilis.</h3>
+                            </div>
+                            <div>
+                                <h3>Tenetur, error. Quod odit veniam rem necessitatibus, eius similique repellendus?</h3>
+                            </div>
+                            <div>
+                                <h3>Excepturi recusandae iure sit non possimus. Fuga itaque dolore laudantium.</h3>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>                                
+            </div>
+        </section>
+
+
+        <section id="banner" class="boxed">
+            <h2>Conoce en detalle nuestro restaurante</h2>
+            <p>En Viva María te ofrecemos una experiencia gastronómica única en Málaga, donde la tradición italiana se fusiona con los mejores productos locales. Cada plato es preparado con esmero, siguiendo recetas familiares que han pasado de generación en generación.</p>
+            <p>Disfruta de un ambiente acogedor y de una atención cercana que te hará sentir como en casa. Nuestro equipo estará encantado de recomendarte los mejores vinos y platos para que tu visita sea inolvidable.</p>
+        </section>
+
+        <section id="video" class="">
+            <!--video class="background" src="videos/fondo.mp4" autoplay muted loop>                
+            </video-->
+            <iframe class="background" src="https://www.youtube.com/embed/y-cqqAJIXhs?si=g88ftgoDFh_8Jvqs&controls=0&autoplay=1&mute=1" title="YouTube video player" frameborder="0"></iframe>
+            <div class="foreground">
+                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, in!</h2>
+            </div>
+        </section>
+
+        <section id="slide">
+
+            <div class="slide-container">
+                <div class="inner">
+                    <div>
+                        <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, facere!</h3>
+                    </div>
+                    <div>
+                        <h3>At earum veniam esse repellendus ducimus qui, quos similique facilis.</h3>
+                    </div>
+                    <div>
+                        <h3>Tenetur, error. Quod odit veniam rem necessitatibus, eius similique repellendus?</h3>
+                    </div>
+                    <div>
+                        <h3>Excepturi recusandae iure sit non possimus. Fuga itaque dolore laudantium.</h3>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="inner">
+            <div>
+                <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil inventore laudantium, quisquam eligendi distinctio esse iure, voluptatum corporis architecto rerum laboriosam nobis pariatur eius quas beatae autem dolor maxime voluptate. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente cupiditate fugiat reprehenderit laudantium. Asperiores nemo ad necessitatibus esse vel dicta nulla atque delectus, veniam facilis illo aut pariatur quasi ut!</p>
+                <p>
+                    <a href="#"><img class="social-icon" src="images/instagram.png" alt=""></a>
+                    <a href="#"><img class="social-icon" src="images/linkedin.png" alt=""></a>
+                    <a href="#"><img class="social-icon" src="images/whatsapp.png" alt=""></a>
+                </p>
+            </div>
+            <div>
+                <h2>Enlaces legales</h2>
+                <ul>
+                    <li><a href="#">Enlace Legal 1</a></li>
+                    <li><a href="#">Enlace Legal 2</a></li>
+                    <li><a href="#">Enlace Legal 3</a></li>
+                    <li><a href="#">Enlace Legal 4</a></li>
+                    <li><a href="#">Enlace Legal 5</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Acceso a administración</h2>
+                <form action="">
+                    <div class="control">
+                        <label for="user">Usuario:</label>
+                        <input id="user" name="usuario" type="text">
+                    </div>
+                    <div class="control">
+                        <label for="password">Password:</label>
+                        <input id="password" name="password" type="password">
+                    </div>
+                    <div class="control">
+                        <button>Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="foot">
+            Developed by 2DAW
+        </div>
+    </footer>
+    
+    <script src="javascripts/front.js"></script>
+</body>
+</html>
