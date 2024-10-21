@@ -6,9 +6,12 @@ document.querySelector("a#open-offcanvas").addEventListener("click",()=>{
     document.querySelector("aside#offcanvas").classList.add("show");
 });
 
-document.querySelector("#offcanvas button.close").addEventListener("click",()=>{
-    document.querySelector("aside#offcanvas").classList.remove("show");
-});
+const button_close = document.querySelector("#offcanvas button.close");
+if(button_close){
+    button_close.addEventListener("click",()=>{
+        document.querySelector("aside#offcanvas").classList.remove("show");
+    });
+}
 
 document.querySelectorAll("#galeria .inner figure").forEach( (el)=>{
     el.addEventListener("click",(event)=>{

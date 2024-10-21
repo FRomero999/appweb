@@ -2,12 +2,8 @@ var express = require('express');
 var router = express.Router();
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  let h1text = "Restaurante Viva María - El Palo";
-  if(req.query.title){
-    h1text = req.query.title;
-  }
-  res.render('home', {titulo: h1text});
+router.get('/', function(req, res, next) { 
+  res.render('home', {head_title: "Principal"});
 });
 
 
@@ -17,7 +13,7 @@ router.get('/celebraciones', function(req, res, next) {
 
 
 router.get('/contacta-con-nosotros', function(req, res, next) {
-  res.redirect("/contacto.html");
+  res.render("contacto", {head_title: "Contacto"});
 });
 
 router.get('/contact-with-us', function(req, res, next) {

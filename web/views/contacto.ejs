@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<%- include('partials/head') %>
+</head>
+<body>
+
+    <aside id="offcanvas">
+        <%- include('partials/offcanvas') %>
+    </aside>
+    
+    <header id="top">
+        <%- include('partials/header') %>
+    </header>
+     
+    <main id="contacto">
+
+        <h1>Contacto</h1>
+
+        <section>
+            <div>
+                <h2>Nuestra dirección</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe expedita odit architecto provident dolorem corporis, libero dicta sunt, eum in sint numquam veniam modi magni! Totam placeat tenetur quaerat eveniet velit aperiam fugiat labore neque qui voluptatibus? Quaerat natus deserunt corrupti at nemo, mollitia magnam! Dolores minima et porro optio necessitatibus vitae facilis eum dolor nobis. Magni ab, voluptatibus ut facilis fugit, sint, saepe totam dolore maiores optio unde et. Ipsum reiciendis dolor quaerat nihil et delectus. Dolorum consequatur est id iste nulla aspernatur doloremque quam soluta architecto possimus iusto quae placeat accusamus, nisi officiis? Voluptate possimus tempore quo tempora.</p>
+            </div>
+            <div>
+                <h2>Envianos un mensaje</h2>
+                <form action="#">
+                    <div>
+                        <label for="nombre">nombre</label>
+ 
+                        <input type="text" list="datalist" id="nombre" name="nombre">
+                        <datalist id="datalist">
+                            <option value="Francisco"></option>
+                            <option value="Romero"></option>
+                            <option value="Guillen"></option>
+                        </datalist>                        
+                    </div>
+                    <div>
+                        <label for="email">email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div>
+                        <label for="mensaje">mensaje</label>
+                        <textarea id="mensaje" name="mensaje"></textarea>
+                    </div>
+                    <div>
+                        <label for="aceptacion">
+                            <input type="checkbox" id="aceptacion" name="aceptacion" required>
+                            Acepto la <a href="#">política de privacidad</a>
+                        </label>
+                        
+                    </div>
+                    <div>
+                        <input class="button" type="submit" value="Enviar">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+      <%- include('partials/footer') %>
+    </footer>
+    
+    <script src="javascripts/front.js"></script>
+</body>
+</html>
