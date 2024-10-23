@@ -28,6 +28,16 @@ router.get('/galeria', function(req, res, next) {
   res.render("galeria",{head_title:"Galerias de imágenes", imagenes:imagenes});
 });
 
+router.get('/carta', function(req,res){
+  const carta = datos.getAllCarta();
+  res.render("carta",{carta:carta});
+});
+
+router.get('/carta/:id',function(req,res){
+  const plato = datos.getItemCarta(req.params.id);
+  res.send(plato);
+});
+
 router.get('/debug/:category/:id', function(req, res, next) {
   console.log(req.body);
   console.log(req.hostname);

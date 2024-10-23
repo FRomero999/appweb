@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <table border="1">
+        <% carta.forEach(plato => { %>
+         <tr>
+            <td><%= plato.id %></td>
+            <td><a href="/carta/<%= plato.id %>"><%= plato.nombre %></a></td>
+            <td><%= plato.precio %></td>
+            <td><%= plato.descripcion %></td>
+            <td><img src="<%= plato.imagen %>"></td>
+            <td>
+                <ul>
+                    <% plato.alergenos.forEach(alergeno => { %>
+                     <li><%= alergeno %></li>
+                    <% }) %>
+                </ul>
+            </td>
+        </tr>
+        <% }) %>
+    </table>
+    
+</body>
+</html>
