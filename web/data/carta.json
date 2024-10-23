@@ -1,0 +1,503 @@
+[
+    {
+      "id": "1",
+      "nombre": "Sopa de Tomate",
+      "precio": "6.50",
+      "alergenos": ["gluten"],
+      "imagen": "https://picsum.photos/300?1",
+      "descripcion": "Sopa caliente de tomate con albahaca fresca.",
+      "disponibilidad": true,
+      "categoria": "Entrante"
+    },
+    {
+      "id": "2",
+      "nombre": "Croquetas de Jamón",
+      "precio": "7.20",
+      "alergenos": ["gluten", "lácteos", "huevo"],
+      "imagen": "https://picsum.photos/300?2",
+      "descripcion": "Croquetas crujientes de jamón serrano.",
+      "disponibilidad": true,
+      "categoria": "Entrante"
+    },
+    {
+      "id": "3",
+      "nombre": "Risotto de Trufa",
+      "precio": "16.00",
+      "alergenos": ["lácteos", "gluten"],
+      "imagen": "https://picsum.photos/300?3",
+      "descripcion": "Risotto cremoso con trufa negra y parmesano.",
+      "disponibilidad": true,
+      "categoria": "Plato principal"
+    },
+    {
+      "id": "4",
+      "nombre": "Solomillo de Ternera",
+      "precio": "22.50",
+      "alergenos": [],
+      "imagen": "https://picsum.photos/300?4",
+      "descripcion": "Jugoso solomillo de ternera a la parrilla.",
+      "disponibilidad": true,
+      "categoria": "Plato principal"
+    },
+    {
+      "id": "5",
+      "nombre": "Tarta de Queso",
+      "precio": "5.90",
+      "alergenos": ["lácteos", "gluten"],
+      "imagen": "https://picsum.photos/300?5",
+      "descripcion": "Tarta casera de queso con base crujiente de galleta.",
+      "disponibilidad": true,
+      "categoria": "Postre"
+    },
+    {
+      "id": "6",
+      "nombre": "Tiramisú",
+      "precio": "6.20",
+      "alergenos": ["gluten", "huevo", "lácteos"],
+      "imagen": "https://picsum.photos/300?6",
+      "descripcion": "Tiramisú clásico con mascarpone y cacao.",
+      "disponibilidad": true,
+      "categoria": "Postre"
+    },
+    {
+      "id": "7",
+      "nombre": "Coca-Cola",
+      "precio": "2.50",
+      "alergenos": [],
+      "imagen": "https://picsum.photos/300?7",
+      "descripcion": "Refresco clásico de cola.",
+      "disponibilidad": true,
+      "categoria": "Bebida"
+    },
+    {
+      "id": "8",
+      "nombre": "Agua Mineral",
+      "precio": "1.80",
+      "alergenos": [],
+      "imagen": "https://picsum.photos/300?8",
+      "descripcion": "Botella de agua mineral natural.",
+      "disponibilidad": true,
+      "categoria": "Bebida"
+    },
+    {
+      "id": "9",
+      "nombre": "Patatas Bravas",
+      "precio": "4.50",
+      "alergenos": [],
+      "imagen": "https://picsum.photos/300?9",
+      "descripcion": "Patatas fritas acompañadas de salsa brava.",
+      "disponibilidad": true,
+      "categoria": "Guarnición"
+    },
+    {
+      "id": "10",
+      "nombre": "Ensaladilla Rusa",
+      "precio": "5.50",
+      "alergenos": ["huevo", "lácteos"],
+      "imagen": "https://picsum.photos/300?10",
+      "descripcion": "Clásica ensaladilla rusa con mayonesa.",
+      "disponibilidad": true,
+      "categoria": "Guarnición"
+    },
+    {
+      "id": "11",
+      "nombre": "Ensalada César",
+      "precio": "9.50",
+      "alergenos": ["lácteos", "gluten", "huevo"],
+      "imagen": "https://picsum.photos/300?11",
+      "descripcion": "Ensalada César con pollo a la parrilla.",
+      "disponibilidad": true,
+      "categoria": "Entrante"
+    },
+    {
+      "id": "12",
+      "nombre": "Gazpacho Andaluz",
+      "precio": "6.00",
+      "alergenos": ["gluten"],
+      "imagen": "https://picsum.photos/300?12",
+      "descripcion": "Gazpacho frío de tomate y verduras.",
+      "disponibilidad": true,
+      "categoria": "Entrante"
+    },
+    {
+      "id": "13",
+      "nombre": "Paella de Mariscos",
+      "precio": "18.00",
+      "alergenos": ["marisco", "gluten"],
+      "imagen": "https://picsum.photos/300?13",
+      "descripcion": "Auténtica paella de mariscos con azafrán.",
+      "disponibilidad": true,
+      "categoria": "Plato principal"
+    },
+    {
+      "id": "14",
+      "nombre": "Pollo al Curry",
+      "precio": "12.50",
+      "alergenos": ["lácteos"],
+      "imagen": "https://picsum.photos/300?14",
+      "descripcion": "Pechuga de pollo al curry con arroz basmati.",
+      "disponibilidad": true,
+      "categoria": "Plato principal"
+    },
+    {
+      "id": "15",
+      "nombre": "Brownie de Chocolate",
+      "precio": "4.90",
+      "alergenos": ["huevo", "gluten", "lácteos", "frutos secos"],
+      "imagen": "https://picsum.photos/300?15",
+      "descripcion": "Brownie de chocolate con nueces y helado de vainilla.",
+      "disponibilidad": true,
+      "categoria": "Postre"
+    },
+    {
+      "id": "16",
+      "nombre": "Helado Artesanal",
+      "precio": "3.80",
+      "alergenos": ["lácteos"],
+      "imagen": "https://picsum.photos/300?16",
+      "descripcion": "Helado artesanal de distintos sabores.",
+      "disponibilidad": true,
+      "categoria": "Postre"
+    },
+    {
+      "id": "17",
+      "nombre": "Jugo de Naranja Natural",
+      "precio": "3.50",
+      "alergenos": [],
+      "imagen": "https://picsum.photos/300?17",
+      "descripcion": "Jugo de naranja recién exprimido.",
+      "disponibilidad": true,
+      "categoria": "Bebida"
+    },
+    {
+      "id": "18",
+      "nombre": "Cerveza Artesanal",
+      "precio": "4.20",
+      "alergenos": ["gluten"],
+      "imagen": "https://picsum.photos/300?18",
+      "descripcion": "Cerveza artesanal de trigo, estilo IPA.",
+      "disponibilidad": true,
+      "categoria": "Bebida"
+    },
+    {
+      "id": "19",
+      "nombre": "Pan de Ajo",
+      "precio": "3.20",
+      "alergenos": ["gluten"],
+      "imagen": "https://picsum.photos/300?19",
+      "descripcion": "Pan crujiente con mantequilla de ajo.",
+      "disponibilidad": true,
+      "categoria": "Guarnición"
+    },
+    {
+      "id": "20",
+      "nombre": "Verduras a la Parrilla",
+      "precio": "4.80",
+      "alergenos": [],
+      "imagen": "https://picsum.photos/300?20",
+      "descripcion": "Variedad de verduras frescas asadas a la parrilla.",
+      "disponibilidad": true,
+      "categoria": "Guarnición"
+    },
+    {
+      "id": "21",
+      "nombre": "Bruschetta de Tomate",
+      "precio": "5.90",
+      "alergenos": ["gluten"],
+      "imagen": "https://picsum.photos/300?21",
+      "descripcion": "Pan tostado con tomate fresco, albahaca y aceite de oliva.",
+      "disponibilidad": true,
+      "categoria": "Entrante"
+    },
+    {
+      "id": "22",
+      "nombre": "Calamares Fritos",
+      "precio": "7.50",
+      "alergenos": ["marisco", "gluten"],
+      "imagen": "https://picsum.photos/300?22",
+      "descripcion": "Calamares frescos fritos con alioli.",
+      "disponibilidad": true,
+      "categoria": "Entrante"
+    },
+    {
+      "id": "23",
+      "nombre": "Filete de Salmón",
+      "precio": "19.00",
+      "alergenos": ["pescado"],
+      "imagen": "https://picsum.photos/300?23",
+      "descripcion": "Filete de salmón a la plancha con limón.",
+      "disponibilidad": true,
+      "categoria": "Plato principal"
+    },
+    {
+      "id": "24",
+      "nombre": "Lasagna de Carne",
+      "precio": "14.00",
+      "alergenos": ["lácteos", "gluten"],
+      "imagen": "https://picsum.photos/300?24",
+      "descripcion": "Lasagna casera de carne con queso gratinado.",
+      "disponibilidad": true,
+      "categoria": "Plato principal"
+    },
+    {
+      "id": "25",
+      "nombre": "Flan de Caramelo",
+      "precio": "4.50",
+      "alergenos": ["lácteos", "huevo"],
+      "imagen": "https://picsum.photos/300?25",
+      "descripcion": "Flan de caramelo con base de vainilla.",
+      "disponibilidad": true,
+      "categoria": "Postre"
+    },
+    {
+      "id": "26",
+      "nombre": "Café Espresso",
+      "precio": "1.80",
+      "alergenos": [],
+      "imagen": "https://picsum.photos/300?26",
+      "descripcion": "Café espresso intenso.",
+      "disponibilidad": true,
+      "categoria": "Bebida"
+    },
+    {
+      "id": "27",
+      "nombre": "Mojito",
+      "precio": "7.50",
+      "alergenos": [],
+      "imagen": "https://picsum.photos/300?27",
+      "descripcion": "Refrescante mojito con menta y lima.",
+      "disponibilidad": true,
+      "categoria": "Bebida"
+    },
+    {
+      "id": "28",
+      "nombre": "Chips de Yuca",
+      "precio": "3.90",
+      "alergenos": [],
+      "imagen": "https://picsum.photos/300?28",
+      "descripcion": "Crujientes chips de yuca frita.",
+      "disponibilidad": true,
+      "categoria": "Guarnición"
+    },
+    {
+      "id": "29",
+      "nombre": "Pure de Patatas",
+      "precio": "4.30",
+      "alergenos": ["lácteos"],
+      "imagen": "https://picsum.photos/300?29",
+      "descripcion": "Puré de patatas cremoso.",
+      "disponibilidad": true,
+      "categoria": "Guarnición"
+    },
+    {
+      "id": "30",
+      "nombre": "Tartar de Atún",
+      "precio": "12.80",
+      "alergenos": ["pescado", "sésamo"],
+      "imagen": "https://picsum.photos/300?30",
+      "descripcion": "Tartar de atún fresco con aguacate y sésamo.",
+      "disponibilidad": true,
+      "categoria": "Entrante"
+    },
+    {
+      "id": "31",
+      "nombre": "Hummus con Pita",
+      "precio": "6.20",
+      "alergenos": ["gluten", "sésamo"],
+      "imagen": "https://picsum.photos/300?31",
+      "descripcion": "Hummus de garbanzos con pan de pita.",
+      "disponibilidad": true,
+      "categoria": "Entrante"
+    },
+    {
+      "id": "32",
+      "nombre": "Bacalao a la Vizcaína",
+      "precio": "17.50",
+      "alergenos": ["pescado"],
+      "imagen": "https://picsum.photos/300?32",
+      "descripcion": "Bacalao al estilo vizcaíno con salsa de pimientos.",
+      "disponibilidad": true,
+      "categoria": "Plato principal"
+    },
+    {
+      "id": "33",
+      "nombre": "Carrillada Ibérica",
+      "precio": "21.00",
+      "alergenos": [],
+      "imagen": "https://picsum.photos/300?33",
+      "descripcion": "Carrillada de cerdo ibérico estofada al vino tinto.",
+      "disponibilidad": true,
+      "categoria": "Plato principal"
+    },
+    {
+      "id": "34",
+      "nombre": "Cheesecake de Fresa",
+      "precio": "5.60",
+      "alergenos": ["gluten", "lácteos"],
+      "imagen": "https://picsum.photos/300?34",
+      "descripcion": "Cheesecake con salsa de fresa.",
+      "disponibilidad": true,
+      "categoria": "Postre"
+    },
+    {
+      "id": "35",
+      "nombre": "Batido de Chocolate",
+      "precio": "4.50",
+      "alergenos": ["lácteos"],
+      "imagen": "https://picsum.photos/300?35",
+      "descripcion": "Batido de chocolate con leche entera.",
+      "disponibilidad": true,
+      "categoria": "Bebida"
+    },
+    {
+      "id": "36",
+      "nombre": "Limonada Casera",
+      "precio": "3.20",
+      "alergenos": [],
+      "imagen": "https://picsum.photos/300?36",
+      "descripcion": "Limonada fresca hecha en casa.",
+      "disponibilidad": true,
+      "categoria": "Bebida"
+    },
+    {
+      "id": "37",
+      "nombre": "Cuscús de Verduras",
+      "precio": "4.80",
+      "alergenos": ["gluten"],
+      "imagen": "https://picsum.photos/300?37",
+      "descripcion": "Cuscús con verduras asadas.",
+      "disponibilidad": true,
+      "categoria": "Guarnición"
+    },
+    {
+      "id": "38",
+      "nombre": "Tempura de Verduras",
+      "precio": "5.90",
+      "alergenos": ["gluten", "huevo"],
+      "imagen": "https://picsum.photos/300?38",
+      "descripcion": "Verduras en tempura con salsa de soja.",
+      "disponibilidad": true,
+      "categoria": "Guarnición"
+    },
+    {
+      "id": "39",
+      "nombre": "Tostada de Aguacate",
+      "precio": "6.50",
+      "alergenos": ["gluten"],
+      "imagen": "https://picsum.photos/300?39",
+      "descripcion": "Tostada de aguacate con aceite de oliva y tomate.",
+      "disponibilidad": true,
+      "categoria": "Entrante"
+    },
+    {
+      "id": "40",
+      "nombre": "Alcachofas Confitadas",
+      "precio": "8.90",
+      "alergenos": [],
+      "imagen": "https://picsum.photos/300?40",
+      "descripcion": "Alcachofas confitadas con aceite de oliva virgen extra.",
+      "disponibilidad": true,
+      "categoria": "Entrante"
+    },
+    {
+      "id": "41",
+      "nombre": "Costillas BBQ",
+      "precio": "15.50",
+      "alergenos": [],
+      "imagen": "https://picsum.photos/300?41",
+      "descripcion": "Costillas de cerdo a la BBQ con salsa barbacoa casera.",
+      "disponibilidad": true,
+      "categoria": "Plato principal"
+    },
+    {
+      "id": "42",
+      "nombre": "Canelones de Espinacas",
+      "precio": "13.00",
+      "alergenos": ["lácteos", "gluten"],
+      "imagen": "https://picsum.photos/300?42",
+      "descripcion": "Canelones rellenos de espinacas y ricotta.",
+      "disponibilidad": true,
+      "categoria": "Plato principal"
+    },
+    {
+      "id": "43",
+      "nombre": "Mousse de Chocolate",
+      "precio": "4.80",
+      "alergenos": ["huevo", "lácteos"],
+      "imagen": "https://picsum.photos/300?43",
+      "descripcion": "Mousse de chocolate negro con nata montada.",
+      "disponibilidad": true,
+      "categoria": "Postre"
+    },
+    {
+      "id": "44",
+      "nombre": "Smoothie de Frutas",
+      "precio": "3.90",
+      "alergenos": [],
+      "imagen": "https://picsum.photos/300?44",
+      "descripcion": "Smoothie de frutas frescas y yogur.",
+      "disponibilidad": true,
+      "categoria": "Bebida"
+    },
+    {
+      "id": "45",
+      "nombre": "Nachos con Guacamole",
+      "precio": "7.00",
+      "alergenos": ["gluten"],
+      "imagen": "https://picsum.photos/300?45",
+      "descripcion": "Nachos crujientes con guacamole casero.",
+      "disponibilidad": true,
+      "categoria": "Entrante"
+    },
+    {
+      "id": "46",
+      "nombre": "Arroz Basmati",
+      "precio": "3.50",
+      "alergenos": [],
+      "imagen": "https://picsum.photos/300?46",
+      "descripcion": "Arroz basmati cocido al vapor.",
+      "disponibilidad": true,
+      "categoria": "Guarnición"
+    },
+    {
+      "id": "47",
+      "nombre": "Crema Catalana",
+      "precio": "5.20",
+      "alergenos": ["huevo", "lácteos"],
+      "imagen": "https://picsum.photos/300?47",
+      "descripcion": "Crema catalana con azúcar caramelizado.",
+      "disponibilidad": true,
+      "categoria": "Postre"
+    },
+    {
+      "id": "48",
+      "nombre": "Agua con Gas",
+      "precio": "2.00",
+      "alergenos": [],
+      "imagen": "https://picsum.photos/300?48",
+      "descripcion": "Agua mineral con gas.",
+      "disponibilidad": true,
+      "categoria": "Bebida"
+    },
+    {
+      "id": "49",
+      "nombre": "Ensalada César",
+      "precio": "8.50",
+      "alergenos": ["huevo", "lácteos", "gluten"],
+      "imagen": "https://picsum.photos/300?49",
+      "descripcion": "Ensalada césar con pollo, crutones y parmesano.",
+      "disponibilidad": true,
+      "categoria": "Entrante"
+    },
+    {
+      "id": "50",
+      "nombre": "Sopa de Miso",
+      "precio": "4.90",
+      "alergenos": ["soja"],
+      "imagen": "https://picsum.photos/300?50",
+      "descripcion": "Sopa de miso con algas y tofu.",
+      "disponibilidad": true,
+      "categoria": "Entrante"
+    }
+  ]
+  
