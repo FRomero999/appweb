@@ -1,6 +1,9 @@
 var express = require('express');
 var router = express.Router();
 
+var datos = require("../data/dataprovider");
+
+
 /* GET home page. */
 router.get('/', function(req, res, next) { 
   res.render('home', {head_title: "Principal"});
@@ -21,7 +24,8 @@ router.get('/contact-with-us', function(req, res, next) {
 });
 
 router.get('/galeria', function(req, res, next) {
-  res.redirect("/galeria.html");
+  const imagenes = datos.getGalleryData()
+  res.render("galeria",{head_title:"Galerias de imágenes", imagenes:imagenes});
 });
 
 router.get('/debug/:category/:id', function(req, res, next) {

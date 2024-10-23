@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('partials/head', {title: head_title}) %>
+</head>
+
+<body>
+
+    <aside id="offcanvas">
+        <%- include('partials/offcanvas') %>
+    </aside>
+    
+    <header id="top">
+        <%- include('partials/header') %>
+    </header>
+      
+    <main id="galeria">
+
+        <h1>Galeria de fotos</h1>
+
+        <div class="inner">
+           <% imagenes.forEach(imagen => { %>
+            <figure>
+                <img src="<%= imagen.url %>" alt="">
+                <figcaption><%= imagen.desc %></figcaption>
+            </figure>        
+           <% }) %>  
+        </div>
+
+    </main>
+    
+    <footer>
+        <%- include('partials/footer') %>
+    </footer>
+    
+    <dialog id="lightbox">
+        <form method="dialog">
+            <img src="" alt="">
+            <button>Cerrar</button>
+        </form>
+    </dialog>
+
+    <script src="javascripts/front.js"></script>
+</body>
+</html>
