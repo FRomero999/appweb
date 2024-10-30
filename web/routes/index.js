@@ -44,6 +44,11 @@ router.get('/carta/:id',function(req,res){
   res.send(plato);
 });
 
+router.get('/index',function(req,res){
+  res.render("index",{title:"Bootstrap"});
+});
+
+
 router.get('/debug/:category/:id', function(req, res, next) {
   console.log(req.body);
   console.log(req.hostname);
