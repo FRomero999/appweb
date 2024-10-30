@@ -9,6 +9,7 @@
 html,body {
   margin:0;
   padding:0;
+
 }
 
 
@@ -388,4 +389,28 @@ dialog#lightbox form{
 
 dialog#lightbox::backdrop{
   background-color: rgba(0,0,0,0.85);
+}
+
+main#login{
+  min-height: 80vh;
+
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+
+  form{
+    color: var(--primary-color);
+    
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    padding:1rem;
+    gap:0.5rem;
+    box-shadow:0 0 5px 1px var(--primary-color);
+    border-radius: 1rem;
+
+  }
+
 }

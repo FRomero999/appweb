@@ -49,6 +49,42 @@ router.get('/index',function(req,res){
 });
 
 
+
+router.get('/login',function(req,res){
+  res.render("login",{head_title:"Login"})
+});
+
+router.get('/admin',function(req,res){
+  if(req.session.login)  res.render("admin", { user:req.session.user });
+  else res.redirect("/login");
+});
+
+router.post('/login',function(req,res){
+  const email = req.body.email;
+  const pass = req.body.password;
+  
+  let user = datos.validateUser(email,pass);
+  
+  console.log(user);
+
+  if(user){
+    req.session.login = true;
+    req.session.user = user;
+    res.redirect("/admin");
+  }
+  else res.redirect("/login");
+
+
+});
+
+
+router.get('/logout',function(req,res){
+  req.session.login = false;
+  req.session.user = null;
+  res.redirect("/");
+});
+
+
 router.get('/debug/:category/:id', function(req, res, next) {
   console.log(req.body);
   console.log(req.hostname);
