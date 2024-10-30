@@ -19,8 +19,14 @@ router.get('/contacta-con-nosotros', function(req, res, next) {
   res.render("contacto", {head_title: "Contacto"});
 });
 
-router.get('/contact-with-us', function(req, res, next) {
-  res.redirect("/contacto.html");
+router.post('/contacta-con-nosotros', function(req, res, next) {
+  console.log( req.body )
+  datos.addContacto( req.body.nombre, req.body.email, req.body.mensaje, req.body.info );
+  res.redirect('/contacta-con-nosotros');
+});
+
+router.get('/contactos', function(req, res, next) {
+  res.send( datos.getAllContactos() );
 });
 
 router.get('/galeria', function(req, res, next) {

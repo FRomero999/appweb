@@ -22,3 +22,9 @@ document.querySelectorAll("#galeria .inner figure").forEach( (el)=>{
         document.querySelector("dialog#lightbox").showModal();
     })
 })
+
+
+const inputInfo = document.querySelector("#inputInfo");
+if(inputInfo){
+    inputInfo.value = navigator.userAgent;   
+}

@@ -1,5 +1,6 @@
 var galeria = require("./data.json");
 var carta = require("./carta.json");
+var contactos = [];
 
 function getGalleryData(){
     return galeria;
@@ -14,9 +15,26 @@ function getItemCarta(id){
     return item[0];
 }
 
+function getAllContactos(){
+    return contactos;
+}
+
+function addContacto(nombre, email, mensaje, info){
+    contactos.push(
+        {
+            nombre: nombre,
+            email: email,
+            mensaje: mensaje,
+            fecha: new Date(),
+            info: info
+        }
+    )
+}
 
 module.exports = {
     getGalleryData,
     getAllCarta,
-    getItemCarta
+    getItemCarta,
+    getAllContactos,
+    addContacto
 }
