@@ -4,7 +4,6 @@ var router = express.Router();
 var datos = require("../data/dataprovider");
 
 
-/* GET home page. */
 router.get('/', function(req, res, next) { 
   res.render('home', {head_title: "Principal"});
 });
@@ -44,20 +43,15 @@ router.get('/carta/:id',function(req,res){
   res.send(plato);
 });
 
-router.get('/index',function(req,res){
-  res.render("index",{title:"Bootstrap"});
-});
 
+
+/* Rutas del login */
 
 
 router.get('/login',function(req,res){
   res.render("login",{head_title:"Login"})
 });
 
-router.get('/admin',function(req,res){
-  if(req.session.login)  res.render("admin", { user:req.session.user });
-  else res.redirect("/login");
-});
 
 router.post('/login',function(req,res){
   const email = req.body.email;
@@ -73,10 +67,7 @@ router.post('/login',function(req,res){
     res.redirect("/admin");
   }
   else res.redirect("/login");
-
-
 });
-
 
 router.get('/logout',function(req,res){
   req.session.login = false;
@@ -84,6 +75,21 @@ router.get('/logout',function(req,res){
   res.redirect("/");
 });
 
+/* Rutas de administración */
+
+router.get('/admin',function(req,res){
+    if(req.session.login)  res.render("admin/admin", { user:req.session.user });
+  else res.redirect("/login");
+});
+
+
+router.get('/admin/mensajes',function(req,res){
+  console.log( datos.getAllContactos() );
+  if(req.session.login)  res.render("admin/mensajes", { user:req.session.user, mensajes:datos.getAllContactos() });
+  else res.redirect("/login");
+});
+
+/* Otras rutas */
 
 router.get('/debug/:category/:id', function(req, res, next) {
   console.log(req.body);
@@ -91,6 +97,10 @@ router.get('/debug/:category/:id', function(req, res, next) {
   console.log(req.params);
   console.log(req.query);
   res.send("ok");
+});
+
+router.get('/index',function(req,res){
+  res.render("index",{title:"Bootstrap"});
 });
 
 

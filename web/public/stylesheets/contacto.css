@@ -1,0 +1,71 @@
+main#contacto{
+
+    display: flex;
+    flex-direction: column;
+    gap:3rem;
+    max-width: var(--site-width);
+    margin:auto;
+    
+  
+    h1{
+      font-family: var(--font-family-header);
+      font-size:3rem;
+      height: 10rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  
+    section{
+  
+      font-size:1.5rem;
+      display:flex;
+      gap:5rem;
+  
+      div{
+        flex:1;
+      }
+  
+      form{
+        display: flex;
+        flex-direction: column;
+      }
+  
+      form div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition:0.3s;
+        padding:1rem;
+  
+        input[type=text], input[type=email], textarea{
+          border-color: var(--primary-color);
+          border-style: solid;
+          border-width: 0 0 3px 0;
+          padding:1rem;
+          font-size:inherit;
+        }
+  
+        &:has(:focus){
+          background-color: var(--primary-color);
+          color: var(--font-color-cta);
+  
+          *:focus{
+            background-color: inherit;
+            color:inherit;
+            outline:none;
+          }
+  
+        }
+  
+      }
+  
+  
+  
+    }
+  
+  
+  }
+  
+  

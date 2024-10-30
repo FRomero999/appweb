@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<%- include('partials/head_admin', {title: "Administración"}) %>
+</head>
+<body>
+    <header id="top">
+        <nav class="menu">
+            <a href="/"><img src="https://picsum.photos/150/40" alt=""></a>
+            <div>
+                Hola <%= user.username %>
+            </div>
+            <ul>
+                <li><a id="open-offcanvas" href="/logout">Salir</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside>
+        <h2>Administración</h2>
+        <nav>
+            <ul>
+                <li><a href="/admin">Administración</a></li>               
+                <li><a href="/admin/mensajes">Contactos</a></li>
+                <li><a href="/logout">Salir</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main id="admin">
+        
+        <div class="admin-contactos">
+
+            <h1>Solicitudes de contacto</h1>
+            <p>Aqui puedes ver los mensajes enviados desde la web</p>
+        
+            <table>
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Nombre</th>
+                        <th>Correo</th>
+                        <th class="mensaje">Mensaje</th>
+                        <th class="origen">Origen</th>
+                    </tr>
+                </thead>
+                <tbody>
+        
+                    <% mensajes.forEach(mensaje => { %>
+                        <tr>
+                            <td><%= new Date(mensaje.fecha).toLocaleString("es-ES", {
+                                day: '2-digit',
+                                month: '2-digit',
+                                year: '2-digit',
+                                hour: '2-digit',
+                                minute: '2-digit',
+                            }); %></td>
+                            <td><%= mensaje.nombre %></td>
+                            <td><%= mensaje.email %></td>
+                            <td><%= mensaje.mensaje %></td>
+                            <td><%= mensaje.info %></td>
+                        </tr>
+                    <% }) %>
+        
+                </tbody>
+            </table>
+        
+        </div>
+    
+    </main>
+    
+    <footer>
+        <div class="foot">
+            ADMIN Developed by 2DAW
+        </div>
+    </footer>
+
+</body>
+</html>

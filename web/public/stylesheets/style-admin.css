@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url("vars.css");
+@import url("header.css");
+@import url("footer.css");
+@import url("components.css");
+
+
+html,body {
+  margin:0;
+  padding:0;
+}
+
+body{
+  display:grid;
+  justify-items: center;
+  align-items:center;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: "cabecera cabecera" "barra cuerpo" "barra footer";
+  min-height: 100vh;
+}
+
+header{ grid-area: cabecera; justify-self: stretch;}
+footer{ grid-area: footer; justify-self: stretch;}
+main{ grid-area: cuerpo;}
+aside{ grid-area: barra; align-self: stretch;}
+
+aside{
+  box-sizing: border-box;
+  width:25rem;
+  background-color: var(--primary-color);
+  color: var(--font-color-header);
+  display:flex;
+  flex-direction: column;
+  gap:1rem;
+
+
+  h2{
+    font-family: var(--font-family-header);
+    font-size: 2.5rem;
+    padding:1rem;
+  }
+
+  ul{
+    list-style: none;
+    font-size:1.5rem;
+    padding:0;
+
+    li{
+      padding:1rem;
+      border-style:solid none solid none;
+      border-width: 1px;
+    }
+
+    li:hover{
+      color: var(--primary-color);
+      background-color: var(--font-color-header);
+      border-right: solid 3px;
+    }
+
+  };
+
+  a{ 
+    color:inherit; 
+    text-decoration: none;
+  }
+
+}
+
+div.admin-contactos{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  color: var(--primary-color);
+  padding:2rem;
+  font-size:1rem;
+
+  table{
+    border-collapse: collapse;
+    overflow: auto; 
+    height: 50vh;
+    display: block;
+
+    th,td{
+      padding:1rem;
+      border:solid 1px;
+    }
+
+    th{
+      background-color: var(--primary-color);
+      color:var(--font-color-header);
+      font-family: var(--font-family-header);
+      font-size:1.5rem;
+      position: sticky; 
+      top: 0;
+      border-color:var(--primary-color);
+    }
+
+    th.mensaje, th.origen{
+      width:25rem;
+    }
+  }
+
+}

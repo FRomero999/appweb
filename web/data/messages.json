@@ -1,0 +1,58 @@
+[
+    {
+        "fecha": "2024-10-29T18:57:09.587Z",
+        "nombre": "Francisco",
+        "email": "romero@gmail.com",
+        "mensaje": "Hola, me gustaría reservar una mesa para cuatro personas el próximo sábado a las 20:00. ¿Podrían confirmar disponibilidad? Gracias.",
+        "info": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0"
+    },
+    {
+        "fecha": "2024-10-30T18:57:09.587Z",
+        "nombre": "mlopez",
+        "email": "m.lopez@example.com",
+        "mensaje": "Buenos días, estoy organizando una cena de empresa para 15 personas y quisiera saber si ofrecen menús especiales para grupos, así como precios. Muchas gracias.",
+        "info": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+    },
+    {
+        "fecha": "2024-10-20T13:27:19.587Z",
+        "nombre": "carmen_r",
+        "email": "carmen.ramos@example.com",
+        "mensaje": "Buenas tardes, ayer hice un pedido a domicilio y uno de los platos llegó frío. ¿Podrían revisar el procedimiento de entrega? Agradecería alguna compensación. Gracias.",
+        "info": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+    },
+    {
+        "fecha": "2024-09-30T08:52:09.587Z",
+        "nombre": "jgarcia",
+        "email": "juan.garcia@example.com",
+        "mensaje": "Hola, quisiera sugerir que incluyan opciones sin gluten en su menú, ya que he notado que no hay muchas alternativas para personas con intolerancias. Sería genial que lo consideren.",
+        "info": "Mozilla/5.0 (Linux; Android 11; SM-G973F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36"
+    },
+    {
+        "fecha": "2024-10-15T11:20:45.587Z",
+        "nombre": "ana_martinez",
+        "email": "ana.martinez@example.com",
+        "mensaje": "Hola, quisiera saber si tienen alguna promoción especial para cenas en pareja los viernes. ¡Gracias de antemano!",
+        "info": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+    },
+    {
+        "fecha": "2024-10-05T16:45:30.587Z",
+        "nombre": "pedro_lopez",
+        "email": "pedro.lopez@example.com",
+        "mensaje": "Buenas tardes, ¿tienen opciones de menú vegetarianas? Estoy pensando en reservar para este sábado y sería útil saberlo.",
+        "info": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+    },
+    {
+        "fecha": "2024-10-10T09:15:22.587Z",
+        "nombre": "silvia_gonzalez",
+        "email": "silvia.gonzalez@example.com",
+        "mensaje": "Hola, hice una reserva hace una semana y me gustaría confirmarla para asegurar que esté todo en orden. Muchas gracias.",
+        "info": "Mozilla/5.0 (Linux; Android 12; Pixel 5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36"
+    },
+    {
+        "fecha": "2024-10-12T14:30:50.587Z",
+        "nombre": "luis_ramirez",
+        "email": "luis.ramirez@example.com",
+        "mensaje": "Buenas, me gustaría organizar una celebración para 10 personas y saber si cuentan con un salón privado. Espero su respuesta.",
+        "info": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1"
+    }    
+]

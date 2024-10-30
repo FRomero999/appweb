@@ -1,6 +1,6 @@
 var galeria = require("./data.json");
 var carta = require("./carta.json");
-var contactos = [];
+var contactos = require("./messages.json");
 var usuarios = require("./users.json");
 
 function getGalleryData(){
