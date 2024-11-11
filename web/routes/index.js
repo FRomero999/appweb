@@ -75,19 +75,6 @@ router.get('/logout',function(req,res){
   res.redirect("/");
 });
 
-/* Rutas de administración */
-
-router.get('/admin',function(req,res){
-    if(req.session.login)  res.render("admin/admin", { user:req.session.user });
-  else res.redirect("/login");
-});
-
-
-router.get('/admin/mensajes',function(req,res){
-  console.log( datos.getAllContactos() );
-  if(req.session.login)  res.render("admin/mensajes", { user:req.session.user, mensajes:datos.getAllContactos() });
-  else res.redirect("/login");
-});
 
 /* Otras rutas */
 
@@ -99,8 +86,8 @@ router.get('/debug/:category/:id', function(req, res, next) {
   res.send("ok");
 });
 
-router.get('/index',function(req,res){
-  res.render("index",{title:"Bootstrap"});
+router.get('/bootstrap',function(req,res){
+  res.render("bootstrap",{title:"Bootstrap"});
 });
 
 
