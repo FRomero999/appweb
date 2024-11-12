@@ -1,6 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración</title>
+    <link rel='stylesheet' href='/css/bootstrap.min.css' />
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-xl navbar-dark bg-primary p-2 justify-content-between">
+        <a class="navbar-brand" href="#">Restaurante Viva Maria</a>
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        ><span class="navbar-toggler-icon"></span></button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" href="/admin" aria-current="page">Admin</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav me-auto mt-2 mt-lg-0 justify-content-end w-100">
+                <li class="nav-item">
+                    <a class="nav-link" href="/logout" aria-current="page">Salir</a>
+                </li>
+            </ul>        
+        </div>
+    </nav>
+    
+
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <aside class="col-md-3  min-vh-100 bg-primary text-bg-primary pt-3">
+                <h2>Administración</h2>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                    <a class="nav-link text-bg-primary" aria-current="page" href="/admin">Administración</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-bg-primary" href="/admin/mensajes">Contactos</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-bg-primary" href="/logout">Salir</a>
+                    </li>
+                </ul>
+            </aside>
+
+            <main class="col-9  min-vh-100 d-flex justify-content-center align-items-center" id="admin">
+                <p>Bienvenido a la administración</p>
+            </main>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
+<!--DOCTYPE html>
+<html lang="en">
+<head>
 <%- include('partials/head_admin', {title: "Administración"}) %>
 </head>
 <body>
@@ -18,4 +94,4 @@
     </footer>
 
 </body>
-</html>
+</html-->
