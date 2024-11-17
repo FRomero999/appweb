@@ -35,7 +35,7 @@ router.get('/galeria', function(req, res, next) {
 
 router.get('/carta', function(req,res){
   const carta = datos.getAllCarta();
-  res.render("carta",{carta:carta});
+  res.render("carta",{head_title:"Carta del restaurante",carta:carta});
 });
 
 router.get('/carta/:id',function(req,res){

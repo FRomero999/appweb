@@ -16,6 +16,10 @@ function getItemCarta(id){
     return item[0];
 }
 
+function addItemCarta(plato){
+    carta.push(plato);
+}
+
 function getAllContactos(){
     return contactos;
 }
@@ -49,6 +53,7 @@ module.exports = {
     getGalleryData,
     getAllCarta,
     getItemCarta,
+    addItemCarta,
     getAllContactos,
     addContacto,
     validateUser

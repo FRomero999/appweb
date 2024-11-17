@@ -1,5 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<head>
+    <%- include('partials/head', {title: head_title}) %>
+</head>
+
+<body>
+
+    <aside id="offcanvas">
+        <%- include('partials/offcanvas') %>
+    </aside>
+    
+    <header id="top">
+        <%- include('partials/header') %>
+    </header>
+      
+    <main id="carta">
+
+        <h1>Conoce nuestra carta</h1>
+
+        <div class="inner">
+            <% carta.forEach(plato => { %>
+            <a href="/carta/<%= plato.id %>">
+                <figure>
+                    <img src="<%= plato.imagen %>">
+                    <figcaption>
+                        <h4><%= plato.nombre %></h4>
+                        <p><%= plato.precio %></p>
+                        <p><%= plato.descripcion %></p>
+                        <ul>
+                            <% plato.alergenos.forEach(alergeno => { %>
+                                <li><%= alergeno %></li>
+                            <% }) %>
+                        </ul>
+                    </figcaption>
+                </figure>
+            </a>       
+           <% }) %>  
+        </div>
+
+    </main>
+    
+    <footer>
+        <%- include('partials/footer') %>
+    </footer>
+
+    <script src="javascripts/front.js"></script>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
